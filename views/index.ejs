@@ -282,7 +282,7 @@ Click the help icon above to learn more.
                         Ready</a></li>
                   </ul>
                 </li>
-                <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-18243' id='mega-menu-item-18243'><a class="mega-menu-link" href="#aboutus">About</a>
+                <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-18243' id='mega-menu-item-18243'><a class="mega-menu-link" href="#aboutus">Line Chart</a>
                 </li>
                 <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-18244' id='mega-menu-item-18244'><a class="mega-menu-link" href="#team">Team</a>
                 </li>
@@ -437,8 +437,8 @@ Click the help icon above to learn more.
 
           <div class="section-header">
 
-            <h2 class="white-text">About</h2>
-            <div class="white-text section-legend">Use this section to showcase important details about your business.
+            <h2 class="white-text">Line Chart</h2>
+            <div class="white-text section-legend">Monthly report of 911 calls.
             </div>
           </div>
           <!-- / END SECTION HEADER -->
@@ -446,82 +446,19 @@ Click the help icon above to learn more.
           <!-- 3 COLUMNS OF ABOUT US-->
 
           <div class="row">
+            <%- include LineChart1.ejs %>
 
-            <!-- COLUMN 1 - BIG MESSAGE ABOUT THE COMPANY-->
+          </div>
+          <div class="row">
+            <%- include LineChart2.ejs %>
 
-            <div class="col-lg-4 col-md-4 column zerif-rtl-big-title">
-              <div class="big-intro" data-scrollreveal="enter left after 0s over 1s">Everything you see here is responsive and mobile-friendly.
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 column zerif_about_us_center text_and_skills" data-scrollreveal="enter bottom after 0s over 1s">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros.
-                <br/>
-                <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros.
-                <br/>
-                <br/> Mauris vel nunc at ipsum fermentum pellentesque quis ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas non adipiscing massa. Sed ut fringilla sapien. Cras sollicitudin, lectus sed tincidunt cursus, magna lectus vehicula augue, a lobortis dui orci et est.</p>
-            </div>
-            <div class="col-lg-4 col-md-4 column zerif-rtl-skills ">
-
-              <ul class="skills" data-scrollreveal="enter right after 0s over 1s">
-
-                <!-- SKILL ONE -->
-
-                <li class="skill skill_1">
-
-                  <div class="skill-count">
-                    <input role="presentation" type="text" id="your-skill-1" value="80" data-thickness=".2" class="skill1" tabindex="-1">
-                  </div>
-                  <div class="section-legend">
-                    <label for="your-skill-1">YOUR SKILL #1</label>
-                  </div>
-                </li>
-
-                <!-- SKILL TWO -->
-
-                <li class="skill skill_2">
-
-                  <div class="skill-count">
-                    <input role="presentation" type="text" id="your-skill-2" value="91" data-thickness=".2" class="skill2" tabindex="-1">
-                  </div>
-                  <div class="section-legend">
-                    <label for="your-skill-2">YOUR SKILL #2</label>
-                  </div>
-                </li>
-
-                <!-- SKILL THREE -->
-                <li class="skill skill_3">
-
-                  <div class="skill-count">
-                    <input role="presentation" type="text" id="your-skill-3" value="88" data-thickness=".2" class="skill3" tabindex="-1">
-                  </div>
-                  <div class="section-legend">
-                    <label for="your-skill-3">YOUR SKILL #3</label>
-                  </div>
-                </li>
-
-                <!-- SKILL FOUR -->
-
-                <li class="skill skill_4">
-
-                  <div class="skill-count">
-                    <input role="presentation" type="text" id="your-skill-4" value="95" data-thickness=".2" class="skill4" tabindex="-1">
-                  </div>
-                  <div class="section-legend">
-                    <label for="your-skill-4">YOUR SKILL #4</label>
-                  </div>
-                </li>
-
-              </ul>
-
-            </div>
-            <!-- / END SKILLS COLUMN-->
 
           </div>
           <!-- / END 3 COLUMNS OF ABOUT US-->
 
-          <!-- CLIENTS -->
+         <!-- &lt;!&ndash; CLIENTS &ndash;&gt;
           <div class="our-clients">
-            <h5><span class="section-footer-title">OUR HAPPY CLIENTS</span></h5></div>
+            <h5><span class="section-footer-title"></span></h5></div>
           <div class="client-list">
             <div data-scrollreveal="enter right move 60px after 0.00s over 2.5s"><span id="zerif_clients-widget-3">
 			<a href="#">
@@ -561,7 +498,7 @@ Click the help icon above to learn more.
 
 			</span></div>
           </div>
-        </div>
+        </div>-->
         <!-- / END CONTAINER -->
 
       </section>
