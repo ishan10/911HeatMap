@@ -1,11 +1,14 @@
     <style type="text/css">
         #heatmap {
-            height: 100%;
+            width		: 100%;
+            height		: 500px;
+            font-size	: 11px;
         }
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
+        .overlay {
+            height:100%;
+            width:100%;
+            position:absolute;
+            top:0px; /*adjust to move it down */
         }
         #floating-panel {
             position: absolute;
@@ -28,6 +31,7 @@
         var map, heatmap;
 
         function initMap() {
+            console.log("ss");
             map = new google.maps.Map(document.getElementById('heatmap'), {
                 zoom: 4,
                 center: {lat: 39.871549, lng: -99.440769},
@@ -86,7 +90,7 @@
     </script>
 
 <div id="heatmap"></div>
-<script async defer src="https://maps.googleapis.com/maps/api/js?libraries=visualization&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIGYAldOuztaSQ6FynAv4OTJK17zFn-Xs&libraries=visualization&callback=initMap"></script>
 
 
 

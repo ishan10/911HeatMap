@@ -284,7 +284,7 @@ Click the help icon above to learn more.
                 </li>
                 <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-18243' id='mega-menu-item-18243'><a class="mega-menu-link" href="#aboutus">Line Chart</a>
                 </li>
-                <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-18244' id='mega-menu-item-18244'><a class="mega-menu-link" href="#team">Team</a>
+                <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-18244' id='mega-menu-item-18244'><a class="mega-menu-link" href="#team">Heat Map</a>
                 </li>
                 <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-18247' id='mega-menu-item-18247'><a class="mega-menu-link" href="#testimonials">Testimonials</a>
                 </li>
@@ -451,55 +451,9 @@ Click the help icon above to learn more.
           </div>
           <div class="row">
             <%- include LineChart2.ejs %>
-
+          </div>
 
           </div>
-          <!-- / END 3 COLUMNS OF ABOUT US-->
-
-         <!-- &lt;!&ndash; CLIENTS &ndash;&gt;
-          <div class="our-clients">
-            <h5><span class="section-footer-title"></span></h5></div>
-          <div class="client-list">
-            <div data-scrollreveal="enter right move 60px after 0.00s over 2.5s"><span id="zerif_clients-widget-3">
-			<a href="#">
-				<img
-                        src="https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/uploads/sites/51/2014/09/Unknown.png"
-                        alt="Client">			</a>
-
-			</span><span id="zerif_clients-widget-4">
-			<a href="#">
-				<img
-                        src="https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/uploads/sites/51/2014/09/Unknown-7.png"
-                        alt="Client">			</a>
-
-			</span><span id="zerif_clients-widget-5">
-			<a href="#">
-				<img
-                        src="https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/uploads/sites/51/2014/09/Unknown-3.png"
-                        alt="Client">			</a>
-
-			</span><span id="zerif_clients-widget-6">
-			<a href="#">
-				<img
-                        src="https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/uploads/sites/51/2014/09/Unknown-4.png"
-                        alt="Client">			</a>
-
-			</span><span id="zerif_clients-widget-7">
-			<a href="#">
-				<img
-                        src="https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/uploads/sites/51/2014/09/Unknown-5.png"
-                        alt="Client">			</a>
-
-			</span><span id="zerif_clients-widget-8">
-			<a href="#">
-				<img
-                        src="https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/uploads/sites/51/2014/09/Unknown-6.png"
-                        alt="Client">			</a>
-
-			</span></div>
-          </div>
-        </div>-->
-        <!-- / END CONTAINER -->
 
       </section>
       <!-- END ABOUT US SECTION -->
@@ -507,13 +461,19 @@ Click the help icon above to learn more.
       <section class="our-team" id="team">
         <div class="container">
           <div class="section-header">
-            <h2 class="dark-text">YOUR TEAM</h2>
-            <div class="section-legend">Prove that you have real people working for you, with some nice looking profile pictures and links to social media.
+            <h2 class="dark-text">911 CALLS HEAT MAP</h2>
+            <div class="section-legend">This is the heat map.</div>
+            <div class="row">
+              <% include heatmap.ejs %>
             </div>
           </div>
-         <div class="row">
-             <% include heatmap.ejs%>
-         </div>
+
+
+
+
+
+
+
         </div>
       </section>
       <section class="testimonial" id="testimonials">
