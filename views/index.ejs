@@ -11,8 +11,27 @@
 
   <title>Zerif Lite - Just another Demos Sites site</title>
   <script type="text/javascript">
-    var ajaxurl = 'https://demo.themeisle.com/zerif-lite/wp-admin/admin-ajax.php';
+      var ajaxurl = 'https://demo.themeisle.com/zerif-lite/wp-admin/admin-ajax.php';
   </script>
+  <script type="text/javascript">
+      jQuery(document).ready(function($) {
+          $(".scroll").click(function(event) {
+              event.preventDefault();
+              $('html,body').animate({
+                  scrollTop: $(this.hash).offset().top
+              }, 1000);
+          });
+      });
+  </script>
+  <!-- start-smoth-scrolling -->
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script type="text/javascript" src="angular/tweets.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+  <script src="https://code.highcharts.com/mapdata/countries/us/us-all.js"></script>
+
 
   <!-- This site is optimized with the Yoast SEO plugin v3.2.5 - https://yoast.com/wordpress/plugins/seo/ -->
   <meta name="description" content="Just another Demos Sites site" />
@@ -36,47 +55,47 @@
   <link rel="alternate" type="application/rss+xml" title="Zerif Lite &raquo; Feed" href="https://demo.themeisle.com/zerif-lite/feed/" />
   <link rel="alternate" type="application/rss+xml" title="Zerif Lite &raquo; Comments Feed" href="https://demo.themeisle.com/zerif-lite/comments/feed/" />
   <script type="text/javascript">
-    window._wpemojiSettings = {
-      "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/",
-      "ext": ".png",
-      "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/",
-      "svgExt": ".svg",
-      "source": {
-        "concatemoji": "https:\/\/demot-vertigostudio.netdna-ssl.com\/zerif-lite\/wp-includes\/js\/wp-emoji-release.min.js"
-      }
-    };
-    ! function(a, b, c) {
-      function d(a) {
-        var b, c, d, e, f = String.fromCharCode;
-        if (!k || !k.fillText) return !1;
-        switch (k.clearRect(0, 0, j.width, j.height), k.textBaseline = "top", k.font = "600 32px Arial", a) {
-          case "flag":
-            return k.fillText(f(55356, 56826, 55356, 56819), 0, 0), !(j.toDataURL().length < 3e3) && (k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 65039, 8205, 55356, 57096), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 55356, 57096), 0, 0), c = j.toDataURL(), b !== c);
-          case "emoji4":
-            return k.fillText(f(55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0), d = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55357, 56425, 55356, 57341, 55357, 56507), 0, 0), e = j.toDataURL(), d !== e
-        }
-        return !1
-      }
+      window._wpemojiSettings = {
+          "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/",
+          "ext": ".png",
+          "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/",
+          "svgExt": ".svg",
+          "source": {
+              "concatemoji": "https:\/\/demot-vertigostudio.netdna-ssl.com\/zerif-lite\/wp-includes\/js\/wp-emoji-release.min.js"
+          }
+      };
+      ! function(a, b, c) {
+          function d(a) {
+              var b, c, d, e, f = String.fromCharCode;
+              if (!k || !k.fillText) return !1;
+              switch (k.clearRect(0, 0, j.width, j.height), k.textBaseline = "top", k.font = "600 32px Arial", a) {
+                  case "flag":
+                      return k.fillText(f(55356, 56826, 55356, 56819), 0, 0), !(j.toDataURL().length < 3e3) && (k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 65039, 8205, 55356, 57096), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 55356, 57096), 0, 0), c = j.toDataURL(), b !== c);
+                  case "emoji4":
+                      return k.fillText(f(55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0), d = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55357, 56425, 55356, 57341, 55357, 56507), 0, 0), e = j.toDataURL(), d !== e
+              }
+              return !1
+          }
 
-      function e(a) {
-        var c = b.createElement("script");
-        c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
-      }
+          function e(a) {
+              var c = b.createElement("script");
+              c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
+          }
 
-      var f, g, h, i, j = b.createElement("canvas"),
+          var f, g, h, i, j = b.createElement("canvas"),
               k = j.getContext && j.getContext("2d");
-      for (i = Array("flag", "emoji4"), c.supports = {
-        everything: !0,
-        everythingExceptFlag: !0
-      }, h = 0; h < i.length; h++) c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]);
-      c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function() {
-        c.DOMReady = !0
-      }, c.supports.everything || (g = function() {
-        c.readyCallback()
-      }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function() {
-        "complete" === b.readyState && c.readyCallback()
-      })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji)))
-    }(window, document, window._wpemojiSettings);
+          for (i = Array("flag", "emoji4"), c.supports = {
+              everything: !0,
+              everythingExceptFlag: !0
+          }, h = 0; h < i.length; h++) c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]);
+          c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function() {
+              c.DOMReady = !0
+          }, c.supports.everything || (g = function() {
+              c.readyCallback()
+          }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function() {
+              "complete" === b.readyState && c.readyCallback()
+          })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji)))
+      }(window, document, window._wpemojiSettings);
   </script>
   <style type="text/css">
     img.wp-smiley,
@@ -91,6 +110,14 @@
       background: none !important;
       padding: 0 !important;
     }
+  </style>
+  <style>
+    #container {
+      height:600px;
+      width: auto;
+      margin: 0 auto;
+    }
+
   </style>
   <link rel='stylesheet' id='pirate_forms_front_styles-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/pirate-forms/css/front.css' type='text/css' media='all' />
   <link rel='stylesheet' id='woocommerce-layout-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=2.6.4' type='text/css' media='all' />
@@ -120,7 +147,7 @@
   <script type='text/javascript'>
     /* <![CDATA[ */
     var pirateFormsObject = {
-      "errors": ""
+        "errors": ""
     };
     /* ]]> */
   </script>
@@ -138,27 +165,27 @@
   <link rel="canonical" href="https://themeisle.com/themes/zerif-lite/" />
   <!-- Google Tag Manager for WordPress by DuracellTomi - http://duracelltomi.com -->
   <script data-cfasync="false" type="text/javascript">
-    var gtm4wp_datalayer_name = "dataLayer";
-    var dataLayer = dataLayer || []
-    dataLayer.push({
-      "pagePostType": "frontpage"
-    });
+      var gtm4wp_datalayer_name = "dataLayer";
+      var dataLayer = dataLayer || []
+      dataLayer.push({
+          "pagePostType": "frontpage"
+      });
   </script>
   <script data-cfasync="false">
-    (function(w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
+      (function(w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+              'gtm.start': new Date().getTime(),
+              event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
               j = d.createElement(s),
               dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
+          j.async = true;
+          j.src =
               '//www.googletagmanager.com/gtm.' + 'js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-KM44RQ8');
+          f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-KM44RQ8');
   </script>
   <!-- End Google Tag Manager -->
   <!-- End Google Tag Manager for WordPress by DuracellTomi -->
@@ -187,17 +214,17 @@ Click the help icon above to learn more.
     }
   </style>
   <script data-no-minify="1" data-cfasync="false">
-    (function(w, d) {
-      function a() {
-        var b = d.createElement("script");
-        b.async = !0;
-        b.src = "https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/wp-rocket/inc/front/js/lazyload.1.0.4.min.js";
-        var a = d.getElementsByTagName("script")[0];
-        a.parentNode.insertBefore(b, a)
-      }
+      (function(w, d) {
+          function a() {
+              var b = d.createElement("script");
+              b.async = !0;
+              b.src = "https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/wp-rocket/inc/front/js/lazyload.1.0.4.min.js";
+              var a = d.getElementsByTagName("script")[0];
+              a.parentNode.insertBefore(b, a)
+          }
 
-      w.attachEvent ? w.attachEvent("onload", a) : w.addEventListener("load", a, !1)
-    })(window, document);
+          w.attachEvent ? w.attachEvent("onload", a) : w.addEventListener("load", a, !1)
+      })(window, document);
   </script>
 </head>
 
@@ -446,14 +473,14 @@ Click the help icon above to learn more.
           <!-- 3 COLUMNS OF ABOUT US-->
 
           <div class="row">
-            <%- include LineChart1.ejs %>
+              <%- include LineChart1.ejs %>
 
           </div>
           <div class="row">
-            <%- include LineChart2.ejs %>
+              <%- include LineChart2.ejs %>
           </div>
 
-          </div>
+        </div>
 
       </section>
       <!-- END ABOUT US SECTION -->
@@ -464,118 +491,19 @@ Click the help icon above to learn more.
             <h2 class="dark-text">911 CALLS HEAT MAP</h2>
             <div class="section-legend">This is the heat map.</div>
             <div class="row">
-              <% include heatmap.ejs %>
+                <% include heatmap.ejs %>
             </div>
           </div>
-
-
-
-
-
-
-
         </div>
       </section>
+
       <section class="testimonial" id="testimonials">
         <div class="container">
           <div class="section-header">
-            <h2 class="white-text">Testimonials</h2>
-            <h6 class="white-text section-legend">Get testimonials from your clients and then display them
-              here.</h6></div>
-          <div class="row" data-scrollreveal="enter right after 0s over 1s">
-            <div class="col-md-12">
-              <div id="client-feedbacks" class="owl-carousel owl-theme  "><span id="zerif_testim-widget-1" class="feedback-box">
-
-			<!-- MESSAGE OF THE CLIENT -->
-
-							<div class="message">
-					Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur nec sem vel sapien venenatis mattis non vitae augue. Nullam congue commodo lorem vitae facilisis. Suspendisse malesuada id turpis interdum dictum.				</div>
-
-                  <!-- CLIENT INFORMATION -->
-
-			<div class="client">
-
-				<div class="quote red-text">
-
-					<i class="fa fa-quote-left"></i>
-
-				</div>
-
-				<div class="client-info">
-
-					<a target="_blank" class="client-name" href="#">Dana Lorem</a>
-
-				</div>
-
-				<div class="client-image hidden-xs"><img
-                          src="https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/uploads/sites/51/2015/11/testimonial1.jpg"
-                          alt=""/></div>
-			</div>
-                  <!-- / END CLIENT INFORMATION-->
-
-			</span><span id="zerif_testim-widget-3" class="feedback-box">
-
-			<!-- MESSAGE OF THE CLIENT -->
-
-							<div class="message">
-					Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur nec sem vel sapien venenatis mattis non vitae augue. Nullam congue commodo lorem vitae facilisis. Suspendisse malesuada id turpis interdum dictum.
-				</div>
-
-                  <!-- CLIENT INFORMATION -->
-
-			<div class="client">
-
-				<div class="quote red-text">
-
-					<i class="fa fa-quote-left"></i>
-
-				</div>
-
-				<div class="client-info">
-
-					<a target="_blank" class="client-name" href="#">Linda Guthrie</a>
-
-				</div>
-
-				<div class="client-image hidden-xs"><img
-                          src="https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/uploads/sites/51/2015/11/testimonial2.jpg"
-                          alt=""/></div>
-			</div>
-                  <!-- / END CLIENT INFORMATION-->
-
-			</span><span id="zerif_testim-widget-4" class="feedback-box">
-
-			<!-- MESSAGE OF THE CLIENT -->
-
-							<div class="message">
-					Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur nec sem vel sapien venenatis mattis non vitae augue. Nullam congue commodo lorem vitae facilisis. Suspendisse malesuada id turpis interdum dictum.				</div>
-
-                  <!-- CLIENT INFORMATION -->
-
-			<div class="client">
-
-				<div class="quote red-text">
-
-					<i class="fa fa-quote-left"></i>
-
-				</div>
-
-				<div class="client-info">
-
-					<a target="_blank" class="client-name" href="#">Cynthia Henry</a>
-
-				</div>
-
-				<div class="client-image hidden-xs"><img
-                          src="https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/uploads/sites/51/2015/11/testimonial3.jpg"
-                          alt=""/></div>
-			</div>
-                  <!-- / END CLIENT INFORMATION-->
-
-			</span></div>
-            </div>
-          </div>
+            <h2 class="white-text">911 calls</h2></div>
+          <div id="container"></div>
         </div>
+
       </section>
       <section class="purchase-now" id="ribbon_right">
         <div class="container">
@@ -788,12 +716,12 @@ Click the help icon above to learn more.
 <script type='text/javascript'>
   /* <![CDATA[ */
   var wc_add_to_cart_params = {
-    "ajax_url": "\/zerif-lite\/wp-admin\/admin-ajax.php",
-    "wc_ajax_url": "\/zerif-lite\/?wc-ajax=%%endpoint%%",
-    "i18n_view_cart": "View Cart",
-    "cart_url": "https:\/\/demo.themeisle.com\/zerif-lite\/cart\/",
-    "is_cart": "",
-    "cart_redirect_after_add": "no"
+      "ajax_url": "\/zerif-lite\/wp-admin\/admin-ajax.php",
+      "wc_ajax_url": "\/zerif-lite\/?wc-ajax=%%endpoint%%",
+      "i18n_view_cart": "View Cart",
+      "cart_url": "https:\/\/demo.themeisle.com\/zerif-lite\/cart\/",
+      "is_cart": "",
+      "cart_redirect_after_add": "no"
   };
   /* ]]> */
 </script>
@@ -802,8 +730,8 @@ Click the help icon above to learn more.
 <script type='text/javascript'>
   /* <![CDATA[ */
   var woocommerce_params = {
-    "ajax_url": "\/zerif-lite\/wp-admin\/admin-ajax.php",
-    "wc_ajax_url": "\/zerif-lite\/?wc-ajax=%%endpoint%%"
+      "ajax_url": "\/zerif-lite\/wp-admin\/admin-ajax.php",
+      "wc_ajax_url": "\/zerif-lite\/?wc-ajax=%%endpoint%%"
   };
   /* ]]> */
 </script>
@@ -812,9 +740,9 @@ Click the help icon above to learn more.
 <script type='text/javascript'>
   /* <![CDATA[ */
   var wc_cart_fragments_params = {
-    "ajax_url": "\/zerif-lite\/wp-admin\/admin-ajax.php",
-    "wc_ajax_url": "\/zerif-lite\/?wc-ajax=%%endpoint%%",
-    "fragment_name": "wc_fragments"
+      "ajax_url": "\/zerif-lite\/wp-admin\/admin-ajax.php",
+      "wc_ajax_url": "\/zerif-lite\/?wc-ajax=%%endpoint%%",
+      "fragment_name": "wc_fragments"
   };
   /* ]]> */
 </script>
@@ -828,48 +756,117 @@ Click the help icon above to learn more.
 <script type='text/javascript'>
   /* <![CDATA[ */
   var megamenu = {
-    "effect": {
-      "fade": {
-        "in": {
-          "animate": {
-            "opacity": "show"
+      "effect": {
+          "fade": {
+              "in": {
+                  "animate": {
+                      "opacity": "show"
+                  },
+                  "css": {
+                      "display": "none"
+                  }
+              },
+              "out": {
+                  "animate": {
+                      "opacity": "hide"
+                  }
+              },
+              "speed": "fast"
           },
-          "css": {
-            "display": "none"
+          "slide": {
+              "in": {
+                  "animate": {
+                      "height": "show"
+                  },
+                  "css": {
+                      "display": "none"
+                  }
+              },
+              "out": {
+                  "animate": {
+                      "height": "hide"
+                  }
+              },
+              "speed": "fast"
           }
-        },
-        "out": {
-          "animate": {
-            "opacity": "hide"
-          }
-        },
-        "speed": "fast"
       },
-      "slide": {
-        "in": {
-          "animate": {
-            "height": "show"
-          },
-          "css": {
-            "display": "none"
-          }
-        },
-        "out": {
-          "animate": {
-            "height": "hide"
-          }
-        },
-        "speed": "fast"
-      }
-    },
-    "timeout": "300",
-    "interval": "100"
+      "timeout": "300",
+      "interval": "100"
   };
   /* ]]> */
 </script>
+<script>
+    $(function () {
+        $.ajax({url: "json/states_usa.json",
+            success: function(result){
+                customFunction(result);
+            }});
+
+        function customFunction(data){
+            console.log(data);
+
+            // Instantiate the map
+            Highcharts.mapChart('container', {
+
+                chart: {
+                    borderWidth: 1
+                },
+
+                title: {
+                    text: 'Number of 911 calls per state in USA'
+                },
+
+                legend: {
+                    layout: 'horizontal',
+                    borderWidth: 0,
+                    backgroundColor: 'rgba(255,255,255,0.8)',
+                    floating: true,
+                    verticalAlign: 'top',
+                    y: 25
+                },
+
+                mapNavigation: {
+                    enabled: true
+                },
+
+                colorAxis: {
+                    min: 1,
+                    type: 'logarithmic',
+                    //   minColor: '#0cf47c',
+                    //  maxColor: '#022814',
+                    stops: [
+                        [0, '#0cf47c'],
+                        [0.2, '#09b75d'],
+                        [0.4, '#077c40'],
+                        [0.6, '#045129'],
+                        [0.8, '#022814'],
+                        [1.0, '#000501']
+                    ]
+                },
+
+                series: [{
+                    animation: {
+                        duration: 1000
+                    },
+                    data: data,
+                    mapData: Highcharts.maps['countries/us/us-all'],
+                    joinBy: ['postal-code', 'code'],
+                    dataLabels: {
+                        enabled: true,
+                        color: '#FFFFFF',
+                        format: '{point.code}'
+                    },
+                    name: 'Number of 911 Calls',
+                    tooltip: {
+                        pointFormat: '{point.code}: {point.value}'
+                    }
+                }]
+            });//container
+            //  });
+        }
+    });
+</script>
 <script type='text/javascript' src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/megamenu/js/maxmegamenu.js?ver=2.1.5'></script>
 <script type='text/javascript' src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-includes/js/wp-embed.min.js'></script>
-
 </body>
-
 </html>
