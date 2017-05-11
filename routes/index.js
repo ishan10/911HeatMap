@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var mongourl = "mongodb://localhost:27017/PotholeData";
+var mongourl = "mongodb://cmpe280:cmpe280@ds137281.mlab.com:37281/cmpe280heatmap";
 var MongoClient = require('mongodb').MongoClient;
 
 var accountSid = 'ACb4202c6fc6db123e65885cc15f0d7763';
@@ -113,5 +113,6 @@ router.get('/sendAlert', function(req, res, next) {
         console.log(message.sid + "sucess send");
     });*/
 });
+
 
 module.exports = router;
