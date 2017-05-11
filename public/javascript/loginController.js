@@ -64,4 +64,22 @@ app.controller('loginController',function($scope,$http){
         });
 
     }
+
+    $scope.getTweets = function () {
+        $http({
+            method : 'GET',
+            url : "/getTweets",
+            data : {
+
+            }
+
+        }).success(function (data) {
+           $scope.valdata = data.data;
+            var val = $scope.valdata[0].data;
+            alert(val);
+        });
+
+    }
+
+
 });
