@@ -17,7 +17,7 @@ app.controller('loginController',function($scope,$http){
 
         }).success(function (data) {
             if(data.data){
-                window.location.assign("/");
+                window.location.assign("/index");
             }
             else{
 
@@ -60,7 +60,7 @@ app.controller('loginController',function($scope,$http){
             }
 
         }).success(function (data) {
-           alert(data);
+           window.location.assign("/index");
         });
 
     }

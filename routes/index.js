@@ -11,11 +11,15 @@ var client = require('twilio')(accountSid, authToken);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('login', { title: 'Express' });
 });
 
 router.get('/globe', function(req, res, next) {
     res.render('globe');
+});
+
+router.get('/index', function(req, res, next) {
+    res.render('index');
 });
 
 router.get('/tweet', function(req, res, next) {
@@ -122,6 +126,7 @@ router.post('/sendAlert', function(req, res, next) {
                     console.log(message.sid + "sucess send");
                 });
             }
+            res.send({"data" : 200});
         });
     })
 
