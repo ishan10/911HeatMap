@@ -7,7 +7,6 @@ var app =  angular.module('loginApp',[]);
 app.controller('loginController',function($scope,$http){
 
     $scope.login = function () {
-        alert($scope.pass);
         $http({
            method : 'POST',
             url : "/logincheck",
@@ -17,7 +16,13 @@ app.controller('loginController',function($scope,$http){
             }
 
         }).success(function (data) {
-            alert(data.data);
+            if(data.data){
+                window.location.assign("/");
+            }
+            else{
+
+                window.location.assign("/login");
+            }
         });
 
     }
@@ -35,7 +40,12 @@ app.controller('loginController',function($scope,$http){
             }
 
         }).success(function (data) {
-        //alert(data);
+        if(data.data == 200){
+            window.location.assign("/login");
+        }
+        else{
+            window.location.assign("/register");
+        }
         });
 
     }

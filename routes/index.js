@@ -43,35 +43,49 @@ router.post('/register1', function(req, res, next) {
 
         if(err)
             throw err;
-        db.collection("users").insert({"email" : email, "password" : password, "zipcode" : zipcode,"mobile" : mobile},{w:1},function (err,res) {
-            if (err)
+        db.collection("users").insert({"email" : email, "password" : password, "zipcode" : zipcode,"mobile" : mobile},{w:1},function (err,result) {
+            if (err){
                 console.log("Error");
+            }
+            else{
+                res.send({"data" : 200});
+            }
         });
     })
-    res.send({
-            "data" : "Successful Signup"
-        }
-    )
+
 });
 
 router.post('/logincheck', function(req, res, next) {
     var email = req.body.email;
     var password = req.body.password;
-    console.log("The email here is" + email);
-    console.log("The email here is" + password);
-    var output = false;
     MongoClient.connect(mongourl,function (err,db) {
 
         if(err)
             throw err;
         db.collection("users").findOne({"email" : email}, function(err, document) {
-           // console.log(document);
-            if (document.email == email)
-                output = true;
+           if(err)
+           {
+               res.send({"data" : false});
+           }
+            if(document != null)
+           {
+                if(document.email.trim() === email.trim()){
+                 output = true;
+                 res.send({"data" : true});
+               }
+                else
+               {
+                res.send({"data" : false});
+               }
+           }
+           else{
+                res.send({"data" : false});
+            }
+
 
         });
     });
-    res.send({"data" : output});
+
 
 
 });
