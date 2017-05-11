@@ -10,7 +10,7 @@ var client = require('twilio')(accountSid, authToken);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('login', { title: 'Express' });
 });
 
 router.get('/globe', function(req, res, next) {
@@ -91,9 +91,10 @@ router.post('/logincheck', function(req, res, next) {
 });
 
 
-router.get('/sendAlert', function(req, res, next) {
+router.post('/sendAlert', function(req, res, next) {
 
-
+    var zip = req.body.zip;
+    var message = req.body.message;
     MongoClient.connect(mongourl,function (err,db) {
 
         if(err)
@@ -102,15 +103,15 @@ router.get('/sendAlert', function(req, res, next) {
             console.log(document);
 
         });*/
-        db.collection("users").find({"zipcode" : "23233"}).toArray(function(err, results){
+        db.collection("users").find({"zipcode" : zip}).toArray(function(err, results){
             // output all records
             for (var i = 0; i < results.length;i++)
             {
-                console.log(results[i]);
+                //console.log(results[i]);
                 client.messages.create({
-                    to: "+14086272499",
+                    to: results[i].mobile,
                     from: "+12014845605",
-                    body: "replacement for 6abhay",
+                    body: message
                     //mediaUrl: "https://c1.staticflickr.com/3/2899/14341091933_1e92e62d12_b.jpg",
                 }, function(err, message) {
                     console.log(message.sid + "sucess send");
