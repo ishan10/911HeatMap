@@ -25,7 +25,6 @@ app.controller('loginController',function($scope,$http){
 
     $scope.register = function () {
 
-        alert( $scope.email);
         $http({
             method : 'POST',
             url : "/register1",
