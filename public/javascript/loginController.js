@@ -25,10 +25,10 @@ app.controller('loginController',function($scope,$http){
 
     $scope.register = function () {
 
-        alert( $scope.pass);
+        alert( $scope.email);
         $http({
             method : 'POST',
-            url : "/register",
+            url : "/register1",
             data : {
                 email : $scope.email,
                 password : $scope.pass,
@@ -36,7 +36,7 @@ app.controller('loginController',function($scope,$http){
             }
 
         }).success(function (data) {
-
+        alert(data.data);
         });
 
     }
