@@ -38,11 +38,12 @@ router.post('/register1', function(req, res, next) {
     var email = req.body.email;
     var password = req.body.password;
     var zipcode = req.body.zip;
+    var mobile = req.body.mobile;
     MongoClient.connect(mongourl,function (err,db) {
 
         if(err)
             throw err;
-        db.collection("users").insert({"email" : email, "password" : password, "zipcode" : zipcode},{w:1},function (err,res) {
+        db.collection("users").insert({"email" : email, "password" : password, "zipcode" : zipcode,"mobile" : mobile},{w:1},function (err,res) {
             if (err)
                 console.log("Error");
         });
@@ -64,13 +65,14 @@ router.post('/logincheck', function(req, res, next) {
         if(err)
             throw err;
         db.collection("users").findOne({"email" : email}, function(err, document) {
-            console.log(document);
-            if (document == null)
-                output = false;
-            else
+           // console.log(document);
+            if (document.email == email)
                 output = true;
+
         });
-    })
+    });
+    res.send({"data" : output});
+
 
 });
 
