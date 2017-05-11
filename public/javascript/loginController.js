@@ -76,10 +76,8 @@ app.controller('loginController',function($scope,$http){
         }).success(function (data) {
            $scope.valdata = data.data;
             var val = $scope.valdata[0].data;
-            alert(val);
         });
 
     }
-
 
 });
