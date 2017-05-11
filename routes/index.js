@@ -3,6 +3,11 @@ var router = express.Router();
 var mongourl = "mongodb://localhost:27017/PotholeData";
 var MongoClient = require('mongodb').MongoClient;
 
+var accountSid = 'ACb4202c6fc6db123e65885cc15f0d7763';
+var authToken = '8bd9fe10702b72c4a7d13bdc0d150f6b';
+//require the Twilio module and create a REST client
+var client = require('twilio')(accountSid, authToken);
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
@@ -69,5 +74,44 @@ router.get('/logincheck', function(req, res, next) {
 
 });
 
+
+router.get('/sendAlert', function(req, res, next) {
+
+
+    MongoClient.connect(mongourl,function (err,db) {
+
+        if(err)
+            throw err;
+        /*db.collection("users").find({}, function(err, document) {
+            console.log(document);
+
+        });*/
+        db.collection("users").find({"zipcode" : "23233"}).toArray(function(err, results){
+            // output all records
+            for (var i = 0; i < results.length;i++)
+            {
+                console.log(results[i]);
+                client.messages.create({
+                    to: "+16692387574",
+                    from: "+12014845605",
+                    body: "Message zhala na appa",
+                    //mediaUrl: "https://c1.staticflickr.com/3/2899/14341091933_1e92e62d12_b.jpg",
+                }, function(err, message) {
+                    console.log(message.sid + "sucess send");
+                });
+            }
+        });
+    })
+
+
+    /*client.messages.create({
+        to: "+16692387574",
+        from: "+12014845605",
+        body: "test message in progress",
+        //mediaUrl: "https://c1.staticflickr.com/3/2899/14341091933_1e92e62d12_b.jpg",
+    }, function(err, message) {
+        console.log(message.sid + "sucess send");
+    });*/
+});
 
 module.exports = router;
