@@ -7,7 +7,7 @@ var app =  angular.module('loginApp',[]);
 app.controller('loginController',function($scope,$http){
 
     $scope.login = function () {
-        alert($scope.email);
+        alert($scope.pass);
         $http({
            method : 'GET',
             url : "/logincheck",

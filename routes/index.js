@@ -92,9 +92,9 @@ router.get('/sendAlert', function(req, res, next) {
             {
                 console.log(results[i]);
                 client.messages.create({
-                    to: "+16692387574",
+                    to: "+14086272499",
                     from: "+12014845605",
-                    body: "Message zhala na appa",
+                    body: "replacement for 6abhay",
                     //mediaUrl: "https://c1.staticflickr.com/3/2899/14341091933_1e92e62d12_b.jpg",
                 }, function(err, message) {
                     console.log(message.sid + "sucess send");
