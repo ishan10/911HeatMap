@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://demo.themeisle.com/zerif-lite/xmlrpc.php">
+
+    <title>Italiani HeatMap</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+
+    <!-- //for-mobile-apps -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+
+<body ng-app = "loginApp" ng-controller = "loginController">
+<div class="login-page">
+    <div class="container">
+        <h3 class="tittle">login</h3>
+        <div class="col-md-12">
+            <div class="about_img">
+                <!-- <form action="/statistics"> -->
+                <form>
+                    <div class="form-group input-group-lg">
+                        <label for="email">Email address:</label>
+                        <input id="email" ng-model = "email" type="email" class="form-control" placeholder="Email" aria-describedby="sizing-addon1" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                    </div>
+                    <div class="form-group input-group-lg">
+                        <label for="pwd">Password:</label>
+                        <input id="pwd" ng-model = "pass" type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1">
+                    </div>
+
+                    <div class="form-group" align="center">
+                        <div class="col-sm-offset-2 col-sm-8">
+                            <button type="button" ng-click = "login()" id="login" class="btn btn-default btn-lg" style="background-color: #0b9194; color: white; width: 200px;">Login</button>
+                            <button type="reset" class="btn btn-default btn-lg" style="background-color: #0b9194; color: white;width: 200px;">Cancel</button>
+                        </div>
+
+                        <label class="sign" style="margin-top: 10px;">Do not have an account ? <a href="/register">Sign Up</a></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src = "./javascript/loginController.js"></script>
+</body>
+</html>
