@@ -53,11 +53,11 @@ router.post('/register1', function(req, res, next) {
     )
 });
 
-router.get('/logincheck', function(req, res, next) {
+router.post('/logincheck', function(req, res, next) {
     var email = req.body.email;
     var password = req.body.password;
     console.log("The email here is" + email);
-
+    console.log("The email here is" + password);
     var output = false;
     MongoClient.connect(mongourl,function (err,db) {
 

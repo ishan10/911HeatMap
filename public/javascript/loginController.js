@@ -9,11 +9,11 @@ app.controller('loginController',function($scope,$http){
     $scope.login = function () {
         alert($scope.pass);
         $http({
-           method : 'GET',
+           method : 'POST',
             url : "/logincheck",
             data : {
-               email : $scope.email,
-                password : $scope.pass
+               "email" : $scope.email,
+               "password" : $scope.pass
             }
 
         }).success(function (data) {
@@ -30,7 +30,8 @@ app.controller('loginController',function($scope,$http){
             data : {
                 email : $scope.email,
                 password : $scope.pass,
-                zip : $scope.zip
+                zip : $scope.zip,
+                mobile : $scope.mobile
             }
 
         }).success(function (data) {
