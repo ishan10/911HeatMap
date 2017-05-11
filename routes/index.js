@@ -10,7 +10,7 @@ var client = require('twilio')(accountSid, authToken);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('login', { title: 'Express' });
+  res.render('index', { title: 'Express' });
 });
 
 router.get('/globe', function(req, res, next) {
