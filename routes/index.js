@@ -48,5 +48,26 @@ router.post('/register1', function(req, res, next) {
     )
 });
 
+router.get('/logincheck', function(req, res, next) {
+    var email = req.body.email;
+    var password = req.body.password;
+    console.log("The email here is" + email);
+
+    var output = false;
+    MongoClient.connect(mongourl,function (err,db) {
+
+        if(err)
+            throw err;
+        db.collection("users").findOne({"email" : email}, function(err, document) {
+            console.log(document);
+            if (document == null)
+                output = false;
+            else
+                output = true;
+        });
+    })
+
+});
+
 
 module.exports = router;

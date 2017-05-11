@@ -7,18 +7,17 @@ var app =  angular.module('loginApp',[]);
 app.controller('loginController',function($scope,$http){
 
     $scope.login = function () {
-
-        alert( $scope.pass);
+        alert($scope.email);
         $http({
-           method : 'POST',
-            url : "/login",
+           method : 'GET',
+            url : "/logincheck",
             data : {
                email : $scope.email,
                 password : $scope.pass
             }
 
         }).success(function (data) {
-
+            alert(data.data);
         });
 
     }
@@ -35,7 +34,7 @@ app.controller('loginController',function($scope,$http){
             }
 
         }).success(function (data) {
-        alert(data.data);
+        //alert(data);
         });
 
     }
