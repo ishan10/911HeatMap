@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var mongourl = "mongodb://cmpe280:cmpe280@ds137281.mlab.com:37281/cmpe280heatmap";
 var MongoClient = require('mongodb').MongoClient;
+var Twitter = require('twitter');
 
 var accountSid = 'ACb4202c6fc6db123e65885cc15f0d7763';
 var authToken = '8bd9fe10702b72c4a7d13bdc0d150f6b';
@@ -15,6 +16,10 @@ router.get('/', function(req, res, next) {
 
 router.get('/globe', function(req, res, next) {
     res.render('globe');
+});
+
+router.get('/tweet', function(req, res, next) {
+    res.render('tweet');
 });
 
 router.get('/login', function(req, res, next) {
@@ -129,6 +134,35 @@ router.post('/sendAlert', function(req, res, next) {
     }, function(err, message) {
         console.log(message.sid + "sucess send");
     });*/
+});
+
+router.get('/getTweets', function(req, res, next) {
+    var client = new Twitter({
+        consumer_key: '7Zsd2xkYFTNcyTUdLZLTGhaPp',
+        consumer_secret: 'm8ON50IXFy2xBLCPJa56JuCBBroGVGvrwCT8dsq5MIV9nDubfx',
+        access_token_key: '791446091140964352-AjYeLO3zBwStzhuR0BvM8v25uiiJ2e9',
+        access_token_secret: 'iWbUZ9Pu8YHt5hW2iJMbKfAeL7GeBbLgns9Euy84TihZ2'
+    });
+var streamdata = [];
+var count = 0;
+    var stream = client.stream('statuses/filter', {track: 'crime'});
+    stream.on('data', function(event) {
+        console.log(event.text);
+
+        count++;
+        streamdata.push({"data" : event.text});
+        if (count == 5) {
+            stream.destroy();
+            res.send({"data" : streamdata});
+        }
+        //stream.destroy();
+
+
+    });
+
+    stream.on('error', function(error) {
+        throw error;
+    });
 });
 
 
