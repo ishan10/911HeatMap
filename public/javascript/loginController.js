@@ -49,4 +49,19 @@ app.controller('loginController',function($scope,$http){
         });
 
     }
+
+    $scope.sendAlert = function () {
+       $http({
+            method : 'POST',
+            url : "/sendAlert",
+            data : {
+                zip : $scope.zipcode,
+                message : $scope.message
+            }
+
+        }).success(function (data) {
+           alert(data);
+        });
+
+    }
 });
