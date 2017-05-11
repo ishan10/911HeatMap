@@ -4,360 +4,360 @@
 
 <head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="profile" href="http://gmpg.org/xfn/11">
-  <link rel="pingback" href="https://demo.themeisle.com/zerif-lite/xmlrpc.php">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://demo.themeisle.com/zerif-lite/xmlrpc.php">
 
-  <title>Italiani HeatMap</title>
-  <script type="text/javascript">
-      var ajaxurl = 'https://demo.themeisle.com/zerif-lite/wp-admin/admin-ajax.php';
-  </script>
-  <script type="text/javascript">
-      jQuery(document).ready(function($) {
-          $(".scroll").click(function(event) {
-              event.preventDefault();
-              $('html,body').animate({
-                  scrollTop: $(this.hash).offset().top
-              }, 1000);
-          });
-      });
-  </script>
-  <!-- start-smoth-scrolling -->
+    <title>Italiani HeatMap</title>
+    <script type="text/javascript">
+        var ajaxurl = 'https://demo.themeisle.com/zerif-lite/wp-admin/admin-ajax.php';
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- start-smoth-scrolling -->
 
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-  <script type="text/javascript" src="angular/tweets.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="https://code.highcharts.com/maps/highmaps.js"></script>
-  <script src="https://code.highcharts.com/maps/modules/data.js"></script>
-  <script src="https://code.highcharts.com/mapdata/countries/us/us-all.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript" src="angular/tweets.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+    <script src="https://code.highcharts.com/mapdata/countries/us/us-all.js"></script>
 
 
-  <!-- This site is optimized with the Yoast SEO plugin v3.2.5 - https://yoast.com/wordpress/plugins/seo/ -->
-  <meta name="description" content="Just another Demos Sites site" />
-  <meta name="robots" content="noodp" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Zerif Lite - Just another Demos Sites site" />
-  <meta property="og:description" content="Just another Demos Sites site" />
-  <meta property="og:site_name" content="Zerif Lite" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:description" content="Just another Demos Sites site" />
-  <meta name="twitter:title" content="Zerif Lite - Just another Demos Sites site" />
-  <script type='application/ld+json'>
+    <!-- This site is optimized with the Yoast SEO plugin v3.2.5 - https://yoast.com/wordpress/plugins/seo/ -->
+    <meta name="description" content="Just another Demos Sites site" />
+    <meta name="robots" content="noodp" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Zerif Lite - Just another Demos Sites site" />
+    <meta property="og:description" content="Just another Demos Sites site" />
+    <meta property="og:site_name" content="Zerif Lite" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Just another Demos Sites site" />
+    <meta name="twitter:title" content="Zerif Lite - Just another Demos Sites site" />
+    <script type='application/ld+json'>
         {"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/demo.themeisle.com\/zerif-lite\/","name":"Zerif Lite","potentialAction":{"@type":"SearchAction","target":"https:\/\/demo.themeisle.com\/zerif-lite\/?s={search_term_string}","query-input":"required name=search_term_string"}}
     </script>
-  <!-- / Yoast SEO plugin. -->
+    <!-- / Yoast SEO plugin. -->
 
-  <link rel='dns-prefetch' href='//demot-vertigostudio.netdna-ssl.com' />
-  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
-  <link rel='dns-prefetch' href='//s.w.org' />
-  <link rel="alternate" type="application/rss+xml" title="Italiani HeatMap &raquo; Feed" href="https://demo.themeisle.com/zerif-lite/feed/" />
-  <link rel="alternate" type="application/rss+xml" title="Italiani HeatMap &raquo; Comments Feed" href="https://demo.themeisle.com/zerif-lite/comments/feed/" />
-  <script type="text/javascript">
+    <link rel='dns-prefetch' href='//demot-vertigostudio.netdna-ssl.com' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="alternate" type="application/rss+xml" title="Italiani HeatMap &raquo; Feed" href="https://demo.themeisle.com/zerif-lite/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Italiani HeatMap &raquo; Comments Feed" href="https://demo.themeisle.com/zerif-lite/comments/feed/" />
+    <script type="text/javascript">
 
-      window._wpemojiSettings = {
-          "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/",
-          "ext": ".png",
-          "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/",
-          "svgExt": ".svg",
-          "source": {
-              "concatemoji": "https:\/\/demot-vertigostudio.netdna-ssl.com\/zerif-lite\/wp-includes\/js\/wp-emoji-release.min.js"
-          }
-      };
-      ! function(a, b, c) {
-          function d(a) {
-              var b, c, d, e, f = String.fromCharCode;
-              if (!k || !k.fillText) return !1;
-              switch (k.clearRect(0, 0, j.width, j.height), k.textBaseline = "top", k.font = "600 32px Arial", a) {
-                  case "flag":
-                      return k.fillText(f(55356, 56826, 55356, 56819), 0, 0), !(j.toDataURL().length < 3e3) && (k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 65039, 8205, 55356, 57096), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 55356, 57096), 0, 0), c = j.toDataURL(), b !== c);
-                  case "emoji4":
-                      return k.fillText(f(55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0), d = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55357, 56425, 55356, 57341, 55357, 56507), 0, 0), e = j.toDataURL(), d !== e
-              }
-              return !1
-          }
-      }
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-    }
-  </script> <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></a>
-
-  <script type="text/javascript">
-    window._wpemojiSettings = {
-      "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/",
-      "ext": ".png",
-      "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/",
-      "svgExt": ".svg",
-      "source": {
-        "concatemoji": "https:\/\/demot-vertigostudio.netdna-ssl.com\/zerif-lite\/wp-includes\/js\/wp-emoji-release.min.js"
-      }
-    };
-    ! function(a, b, c) {
-      function d(a) {
-        var b, c, d, e, f = String.fromCharCode;
-        if (!k || !k.fillText) return !1;
-        switch (k.clearRect(0, 0, j.width, j.height), k.textBaseline = "top", k.font = "600 32px Arial", a) {
-          case "flag":
-            return k.fillText(f(55356, 56826, 55356, 56819), 0, 0), !(j.toDataURL().length < 3e3) && (k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 65039, 8205, 55356, 57096), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 55356, 57096), 0, 0), c = j.toDataURL(), b !== c);
-          case "emoji4":
-            return k.fillText(f(55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0), d = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55357, 56425, 55356, 57341, 55357, 56507), 0, 0), e = j.toDataURL(), d !== e
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "https:\/\/demot-vertigostudio.netdna-ssl.com\/zerif-lite\/wp-includes\/js\/wp-emoji-release.min.js"
+            }
+        };
+        ! function(a, b, c) {
+            function d(a) {
+                var b, c, d, e, f = String.fromCharCode;
+                if (!k || !k.fillText) return !1;
+                switch (k.clearRect(0, 0, j.width, j.height), k.textBaseline = "top", k.font = "600 32px Arial", a) {
+                    case "flag":
+                        return k.fillText(f(55356, 56826, 55356, 56819), 0, 0), !(j.toDataURL().length < 3e3) && (k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 65039, 8205, 55356, 57096), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 55356, 57096), 0, 0), c = j.toDataURL(), b !== c);
+                    case "emoji4":
+                        return k.fillText(f(55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0), d = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55357, 56425, 55356, 57341, 55357, 56507), 0, 0), e = j.toDataURL(), d !== e
+                }
+                return !1
+            }
         }
-        return !1
-      }
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script> <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></a>
 
-          function e(a) {
-              var c = b.createElement("script");
-              c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
-          }
+    <script type="text/javascript">
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "https:\/\/demot-vertigostudio.netdna-ssl.com\/zerif-lite\/wp-includes\/js\/wp-emoji-release.min.js"
+            }
+        };
+        ! function(a, b, c) {
+            function d(a) {
+                var b, c, d, e, f = String.fromCharCode;
+                if (!k || !k.fillText) return !1;
+                switch (k.clearRect(0, 0, j.width, j.height), k.textBaseline = "top", k.font = "600 32px Arial", a) {
+                    case "flag":
+                        return k.fillText(f(55356, 56826, 55356, 56819), 0, 0), !(j.toDataURL().length < 3e3) && (k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 65039, 8205, 55356, 57096), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 55356, 57096), 0, 0), c = j.toDataURL(), b !== c);
+                    case "emoji4":
+                        return k.fillText(f(55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0), d = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55357, 56425, 55356, 57341, 55357, 56507), 0, 0), e = j.toDataURL(), d !== e
+                }
+                return !1
+            }
 
-          var f, g, h, i, j = b.createElement("canvas"),
-              k = j.getContext && j.getContext("2d");
-          for (i = Array("flag", "emoji4"), c.supports = {
-              everything: !0,
-              everythingExceptFlag: !0
-          }, h = 0; h < i.length; h++) c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]);
-          c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function() {
-              c.DOMReady = !0
-          }, c.supports.everything || (g = function() {
-              c.readyCallback()
-          }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function() {
-              "complete" === b.readyState && c.readyCallback()
-          })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji)))
-      }(window, document, window._wpemojiSettings);
-  </script>
-  <style type="text/css">
-    img.wp-smiley,
-    img.emoji {
-      display: inline !important;
-      border: none !important;
-      box-shadow: none !important;
-      height: 1em !important;
-      width: 1em !important;
-      margin: 0 .07em !important;
-      vertical-align: -0.1em !important;
-      background: none !important;
-      padding: 0 !important;
-    }
-  </style>
-  <style>
-    #container {
-      height:600px;
-      width: auto;
-      margin: 0 auto;
-    }
+            function e(a) {
+                var c = b.createElement("script");
+                c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
+            }
 
-  </style>
-  <link rel='stylesheet' id='pirate_forms_front_styles-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/pirate-forms/css/front.css' type='text/css' media='all' />
-  <link rel='stylesheet' id='woocommerce-layout-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=2.6.4' type='text/css' media='all' />
-  <link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=2.6.4' type='text/css' media='only screen and (max-width: 768px)' />
-  <link rel='stylesheet' id='woocommerce-general-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=2.6.4' type='text/css' media='all' />
-  <link rel='stylesheet' id='megamenu-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/uploads/sites/51/maxmegamenu/style.css?ver=ecddf5' type='text/css' media='all' />
-  <link rel='stylesheet' id='dashicons-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-includes/css/dashicons.min.css' type='text/css' media='all' />
-  <link rel='stylesheet' id='zerif_font-css' href='https://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C400italic%7CMontserrat%3A400%2C700%7CHomemade+Apple&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-  <link rel='stylesheet' id='zerif_font_all-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&#038;subset=latin' type='text/css' media='all' />
-  <link rel='stylesheet' id='zerif_bootstrap_style-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/themes/zerif-lite/css/bootstrap.css' type='text/css' media='all' />
-  <link rel='stylesheet' id='zerif_fontawesome-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/themes/zerif-lite/css/font-awesome.min.css?ver=v1' type='text/css' media='all' />
-  <link rel='stylesheet' id='zerif_style-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/themes/zerif-lite/style.css?ver=v1' type='text/css' media='all' />
-  <style id='zerif_style-inline-css' type='text/css'>
-    body.home.page:not(.page-template-template-frontpage) {
-      background-image: none !important;
-    }
-  </style>
-  <link rel='stylesheet' id='zerif_responsive_style-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/themes/zerif-lite/css/responsive.css?ver=v1' type='text/css' media='all' />
-  <!--[if lt IE 9]>
-  <link rel='stylesheet' id='zerif_ie_style-css'
-        href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/themes/zerif-lite/css/ie.css?ver=v1'
-        type='text/css' media='all'/>
-  <![endif]-->
-  <link rel='stylesheet' id='sccss_style-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/?sccss=1' type='text/css' media='all' />
-  <script type='text/javascript' src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-  <script type='text/javascript' src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-  <script type='text/javascript'>
-    /* <![CDATA[ */
-    var pirateFormsObject = {
-        "errors": ""
-    };
-    /* ]]> */
-  </script>
-  <script type='text/javascript' src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/pirate-forms/js/scripts-general.js'></script>
-  <script type='text/javascript' src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-form-move-tracker.js?ver=1.5.1'></script>
-  <!--[if lt IE 9]>
-  <script type='text/javascript'
-          src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/themes/zerif-lite/js/html5.js'></script>
-  <![endif]-->
-  <link rel='https://api.w.org/' href='https://demo.themeisle.com/zerif-lite/wp-json/' />
-  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demo.themeisle.com/zerif-lite/xmlrpc.php?rsd" />
-  <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://demo.themeisle.com/zerif-lite/wp-includes/wlwmanifest.xml" />
-  <meta name="generator" content="WordPress 4.7.3" />
-  <meta name="generator" content="WooCommerce 2.6.4" />
-  <link rel="canonical" href="https://themeisle.com/themes/zerif-lite/" />
-  <!-- Google Tag Manager for WordPress by DuracellTomi - http://duracelltomi.com -->
-  <script data-cfasync="false" type="text/javascript">
-      var gtm4wp_datalayer_name = "dataLayer";
-      var dataLayer = dataLayer || []
-      dataLayer.push({
-          "pagePostType": "frontpage"
-      });
-  </script>
-  <script data-cfasync="false">
-      (function(w, d, s, l, i) {
-          w[l] = w[l] || [];
-          w[l].push({
-              'gtm.start': new Date().getTime(),
-              event: 'gtm.js'
-          });
-          var f = d.getElementsByTagName(s)[0],
-              j = d.createElement(s),
-              dl = l != 'dataLayer' ? '&l=' + l : '';
-          j.async = true;
-          j.src =
-              '//www.googletagmanager.com/gtm.' + 'js?id=' + i + dl;
-          f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-KM44RQ8');
-  </script>
-  <!-- End Google Tag Manager -->
-  <!-- End Google Tag Manager for WordPress by DuracellTomi -->
-  <style type="text/css" id="custom-background-css">
-    body.custom-background {
-      background-image: url("https://demo.themeisle.com/zerif-lite/wp-content/themes/zerif-lite/images/bg.jpg");
-      background-position: center top;
-      background-size: auto;
-      background-repeat: repeat;
-      background-attachment: fixed;
-    }
-  </style>
-  <style type="text/css" id="wp-custom-css">
-    /*
-You can add your own CSS here.
+            var f, g, h, i, j = b.createElement("canvas"),
+                    k = j.getContext && j.getContext("2d");
+            for (i = Array("flag", "emoji4"), c.supports = {
+                everything: !0,
+                everythingExceptFlag: !0
+            }, h = 0; h < i.length; h++) c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]);
+            c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function() {
+                c.DOMReady = !0
+            }, c.supports.everything || (g = function() {
+                c.readyCallback()
+            }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function() {
+                "complete" === b.readyState && c.readyCallback()
+            })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji)))
+        }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <style>
+        #container {
+            height:600px;
+            width: auto;
+            margin: 0 auto;
+        }
 
-Click the help icon above to learn more.
-*/
+    </style>
+    <link rel='stylesheet' id='pirate_forms_front_styles-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/pirate-forms/css/front.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-layout-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=2.6.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=2.6.4' type='text/css' media='only screen and (max-width: 768px)' />
+    <link rel='stylesheet' id='woocommerce-general-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=2.6.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='megamenu-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/uploads/sites/51/maxmegamenu/style.css?ver=ecddf5' type='text/css' media='all' />
+    <link rel='stylesheet' id='dashicons-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='zerif_font-css' href='https://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C400italic%7CMontserrat%3A400%2C700%7CHomemade+Apple&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+    <link rel='stylesheet' id='zerif_font_all-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&#038;subset=latin' type='text/css' media='all' />
+    <link rel='stylesheet' id='zerif_bootstrap_style-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/themes/zerif-lite/css/bootstrap.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='zerif_fontawesome-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/themes/zerif-lite/css/font-awesome.min.css?ver=v1' type='text/css' media='all' />
+    <link rel='stylesheet' id='zerif_style-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/themes/zerif-lite/style.css?ver=v1' type='text/css' media='all' />
+    <style id='zerif_style-inline-css' type='text/css'>
+        body.home.page:not(.page-template-template-frontpage) {
+            background-image: none !important;
+        }
+    </style>
+    <link rel='stylesheet' id='zerif_responsive_style-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/themes/zerif-lite/css/responsive.css?ver=v1' type='text/css' media='all' />
+    <!--[if lt IE 9]>
+    <link rel='stylesheet' id='zerif_ie_style-css'
+          href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/themes/zerif-lite/css/ie.css?ver=v1'
+          type='text/css' media='all'/>
+    <![endif]-->
+    <link rel='stylesheet' id='sccss_style-css' href='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/?sccss=1' type='text/css' media='all' />
+    <script type='text/javascript' src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+    <script type='text/javascript' src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var pirateFormsObject = {
+            "errors": ""
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/pirate-forms/js/scripts-general.js'></script>
+    <script type='text/javascript' src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-form-move-tracker.js?ver=1.5.1'></script>
+    <!--[if lt IE 9]>
+    <script type='text/javascript'
+            src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/themes/zerif-lite/js/html5.js'></script>
+    <![endif]-->
+    <link rel='https://api.w.org/' href='https://demo.themeisle.com/zerif-lite/wp-json/' />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demo.themeisle.com/zerif-lite/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://demo.themeisle.com/zerif-lite/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 4.7.3" />
+    <meta name="generator" content="WooCommerce 2.6.4" />
+    <link rel="canonical" href="https://themeisle.com/themes/zerif-lite/" />
+    <!-- Google Tag Manager for WordPress by DuracellTomi - http://duracelltomi.com -->
+    <script data-cfasync="false" type="text/javascript">
+        var gtm4wp_datalayer_name = "dataLayer";
+        var dataLayer = dataLayer || []
+        dataLayer.push({
+            "pagePostType": "frontpage"
+        });
+    </script>
+    <script data-cfasync="false">
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                    '//www.googletagmanager.com/gtm.' + 'js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KM44RQ8');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- End Google Tag Manager for WordPress by DuracellTomi -->
+    <style type="text/css" id="custom-background-css">
+        body.custom-background {
+            background-image: url("https://demo.themeisle.com/zerif-lite/wp-content/themes/zerif-lite/images/bg.jpg");
+            background-position: center top;
+            background-size: auto;
+            background-repeat: repeat;
+            background-attachment: fixed;
+        }
+    </style>
+    <style type="text/css" id="wp-custom-css">
+        /*
+    You can add your own CSS here.
 
-    #mega-menu-wrap-primary .mega-menu-toggle + #mega-menu-primary {
-      margin-top: 3px !important;
-    }
+    Click the help icon above to learn more.
+    */
 
-    .menu-align-center #mega-menu-wrap-primary #mega-menu-primary {
-      text-align: center;
-    }
-  </style>
-  <script data-no-minify="1" data-cfasync="false">
-      (function(w, d) {
-          function a() {
-              var b = d.createElement("script");
-              b.async = !0;
-              b.src = "https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/wp-rocket/inc/front/js/lazyload.1.0.4.min.js";
-              var a = d.getElementsByTagName("script")[0];
-              a.parentNode.insertBefore(b, a)
-          }
+        #mega-menu-wrap-primary .mega-menu-toggle + #mega-menu-primary {
+            margin-top: 3px !important;
+        }
 
-          w.attachEvent ? w.attachEvent("onload", a) : w.addEventListener("load", a, !1)
-      })(window, document);
-  </script>
+        .menu-align-center #mega-menu-wrap-primary #mega-menu-primary {
+            text-align: center;
+        }
+    </style>
+    <script data-no-minify="1" data-cfasync="false">
+        (function(w, d) {
+            function a() {
+                var b = d.createElement("script");
+                b.async = !0;
+                b.src = "https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/wp-rocket/inc/front/js/lazyload.1.0.4.min.js";
+                var a = d.getElementsByTagName("script")[0];
+                a.parentNode.insertBefore(b, a)
+            }
+
+            w.attachEvent ? w.attachEvent("onload", a) : w.addEventListener("load", a, !1)
+        })(window, document);
+    </script>
 </head>
 
 <body class="home blog custom-background wp-custom-logo">
 
 <div id="mobilebgfix">
-  <div class="mobile-bg-fix-img-wrap">
-    <div class="mobile-bg-fix-img"></div>
-  </div>
-  <div class="mobile-bg-fix-whole-site">
+    <div class="mobile-bg-fix-img-wrap">
+        <div class="mobile-bg-fix-img"></div>
+    </div>
+    <div class="mobile-bg-fix-whole-site">
 
-    <header id="home" class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+        <header id="home" class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 
-      <div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner">
+            <div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner">
 
-        <div class="container">
+                <div class="container">
 
-          <div class="navbar-header responsive-logo">
+                    <div class="navbar-header responsive-logo">
 
-            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
 
-              <span class="sr-only">Toggle navigation</span>
+                            <span class="sr-only">Toggle navigation</span>
 
-              <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
 
-              <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
 
-              <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
 
-            </button>
+                        </button>
 
-            <div class="navbar-brand">
+                        <div class="navbar-brand">
 
-              <a href="#" class="custom-logo-link" rel="home" itemprop="url"><img width="109" height="32" src="images/ita2.png" class="custom-logo" alt="" itemprop="logo" /></a>
+                            <a href="#" class="custom-logo-link" rel="home" itemprop="url"><img width="109" height="32" src="images/ita2.png" class="custom-logo" alt="" itemprop="logo" /></a>
+                        </div>
+                        <!-- /.navbar-brand -->
+
+                    </div>
+                    <!-- /.navbar-header -->
+
+                    <nav class="navbar-collapse bs-navbar-collapse collapse" id="site-navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <a class="screen-reader-text skip-link" href="#content">Skip to content</a>
+                        <div id="mega-menu-wrap-primary" class="mega-menu-wrap">
+                            <div class="mega-menu-toggle">
+                                <div class='mega-toggle-block mega-menu-toggle-block mega-toggle-block-right' id='mega-toggle-block-1'></div>
+                            </div>
+                            <ul id="mega-menu-primary" class="mega-menu mega-menu-horizontal mega-no-js" data-event="hover" data-effect="disabled" data-second-click="close" data-document-click="collapse" data-reverse-mobile-items="true" data-vertical-behaviour="standard" data-breakpoint="768">
+                                <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-align-bottom-left mega-menu-megamenu mega-menu-item-18241' id='mega-menu-item-18241'><a class="mega-menu-link" href="#focus">Features</a>
+
+                                </li>
+                                <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-18243' id='mega-menu-item-18243'><a class="mega-menu-link" href="#aboutus">Line Chart</a>
+                                </li>
+                                <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-18244' id='mega-menu-item-18244'><a class="mega-menu-link" href="#team">Heat Map</a>
+                                </li>
+                                <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-18247' id='mega-menu-item-18247'><a class="mega-menu-link" href="#testimonials">State Wise Map</a>
+                                </li>
+                                <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-18247' id='mega-menu-item-18247'><a class="mega-menu-link" href="/globe">Globe</a>
+                                </li>
+                                <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-18248' id='mega-menu-item-18248'><a class="mega-menu-link">
+                                        <div id="google_translate_element"></div></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+
+                </div>
+                <!-- /.container -->
+
             </div>
-            <!-- /.navbar-brand -->
+            <!-- /#main-nav -->
+            <!-- / END TOP BAR -->
+            <div class="home-header-wrap">
 
-          </div>
-          <!-- /.navbar-header -->
-
-          <nav class="navbar-collapse bs-navbar-collapse collapse" id="site-navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-            <a class="screen-reader-text skip-link" href="#content">Skip to content</a>
-            <div id="mega-menu-wrap-primary" class="mega-menu-wrap">
-              <div class="mega-menu-toggle">
-                <div class='mega-toggle-block mega-menu-toggle-block mega-toggle-block-right' id='mega-toggle-block-1'></div>
-              </div>
-              <ul id="mega-menu-primary" class="mega-menu mega-menu-horizontal mega-no-js" data-event="hover" data-effect="disabled" data-second-click="close" data-document-click="collapse" data-reverse-mobile-items="true" data-vertical-behaviour="standard" data-breakpoint="768">
-                <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-align-bottom-left mega-menu-megamenu mega-menu-item-18241' id='mega-menu-item-18241'><a class="mega-menu-link" href="#focus">Features</a>
-
-                </li>
-                <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-18243' id='mega-menu-item-18243'><a class="mega-menu-link" href="#aboutus">Line Chart</a>
-                </li>
-                <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-18244' id='mega-menu-item-18244'><a class="mega-menu-link" href="#team">Heat Map</a>
-                </li>
-                <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-18247' id='mega-menu-item-18247'><a class="mega-menu-link" href="#testimonials">State Wise Map</a>
-                </li>
-                  <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-18247' id='mega-menu-item-18247'><a class="mega-menu-link" href="/globe">Globe</a>
-                  </li>
-                <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-18248' id='mega-menu-item-18248'><a class="mega-menu-link">
-                    <div id="google_translate_element"></div></a>
-                   </li>
-
-              </ul>
+                <div class="header-content-wrap">
+                    <div class="container">
+                        <h1 class="intro-text">Make the best of your WordPress experience with Zerif
+                            Lite</h1>
+                        <div class="buttons"><a href="#focus" class="btn btn-primary custom-button red-btn">Features</a>
+                        </div>
+                    </div>
+                    <!-- .header-content-wrap -->
+                    <div class="clear"></div>
+                </div>
             </div>
-          </nav>
+        </header>
+        <!-- / END HOME SECTION  -->
+        <div id="content" class="site-content">
 
-        </div>
-        <!-- /.container -->
+            <section class="focus" id="focus">
 
-      </div>
-      <!-- /#main-nav -->
-      <!-- / END TOP BAR -->
-      <div class="home-header-wrap">
+                <div class="container">
 
-        <div class="header-content-wrap">
-          <div class="container">
-            <h1 class="intro-text">Make the best of your WordPress experience with Zerif
-              Lite</h1>
-            <div class="buttons"><a href="#focus" class="btn btn-primary custom-button red-btn">Features</a>
-          </div>
-        </div>
-        <!-- .header-content-wrap -->
-        <div class="clear"></div>
-      </div>
-      </div>
-    </header>
-    <!-- / END HOME SECTION  -->
-    <div id="content" class="site-content">
+                    <!-- SECTION HEADER -->
 
-      <section class="focus" id="focus">
+                    <div class="section-header">
 
-        <div class="container">
+                        <!-- SECTION TITLE AND SUBTITLE -->
 
-          <!-- SECTION HEADER -->
+                        <h2 class="dark-text">FEATURES</h2>
+                        <div class="section-legend">What makes this single-page WordPress theme unique.</div>
+                    </div>
 
-          <div class="section-header">
-
-            <!-- SECTION TITLE AND SUBTITLE -->
-
-            <h2 class="dark-text">FEATURES</h2>
-            <div class="section-legend">What makes this single-page WordPress theme unique.</div>
-          </div>
-
-          <div class="row">
+                    <div class="row">
 
                             <span id="ctup-ads-widget-1" class="">
 			<div class="col-lg-3 col-sm-3 focus-box" data-scrollreveal="enter left after 0.15s over 1s">
@@ -370,7 +370,7 @@ Click the help icon above to learn more.
                             </a>
 
                             <h3 class="red-border-bottom">AMCHARTS</h3>
-              <!-- FOCUS HEADING -->
+                <!-- FOCUS HEADING -->
 
                             <p>Create memorable pages with smooth parallax effects that everyone loves. Also, use our lightweight content slider offering you smooth and great-looking animations.</p>
                         </div>
@@ -386,7 +386,7 @@ Click the help icon above to learn more.
                         </a>
 
                         <h3 class="red-border-bottom">HEATMAP</h3>
-              <!-- FOCUS HEADING -->
+                <!-- FOCUS HEADING -->
 
                         <p>Build a front page for your WooCommerce store in a matter of minutes. The neat and clean presentation will help your sales and make your store accessible to everyone.
                         </p>
@@ -403,7 +403,7 @@ Click the help icon above to learn more.
                     </a>
 
                     <h3 class="red-border-bottom">STATE-WISE MAP</h3>
-              <!-- FOCUS HEADING -->
+                <!-- FOCUS HEADING -->
 
                     <p>Showcase your team, products, clients, about info, testimonials, latest posts from the blog, contact form, additional calls to action. Everything translation ready.
                     </p>
@@ -420,167 +420,167 @@ Click the help icon above to learn more.
             </a>
 
             <h3 class="red-border-bottom">GLOBE</h3>
-              <!-- FOCUS HEADING -->
+                <!-- FOCUS HEADING -->
 
             <p>Get new content blocks: pricing table, Google Maps, and more. Change the sections order, display each block exactly where you need it, customize the blocks with whatever colors you wish.</p>
         </div>
 
         </span>
-          </div>
+                    </div>
+
+                </div>
+                <!-- / END CONTAINER -->
+
+            </section>
+            <!-- / END FOCUS SECTION -->
+
+            <section class="separator-one" id="ribbon_bottom">
+                <div class="color-overlay">
+                    <!-- <h3 class="container text" data-scrollreveal="enter left after 0s over 1s">
+                       Check out this cool parallax scrolling effect. Plus, you can change the background image.</h3>
+                     <div data-scrollreveal="enter right after 0s over 1s"><a href="#" class="btn btn-primary custom-button green-btn">button</a>
+                     </div>-->
+                </div>
+            </section>
+            <section class="about-us" id="aboutus">
+
+                <div class="container">
+
+                    <!-- SECTION HEADER -->
+
+                    <div class="section-header">
+
+                        <h2 class="white-text">Line Chart</h2>
+                        <div class="white-text section-legend">Monthly report of 911 calls.
+                        </div>
+                    </div>
+                    <!-- / END SECTION HEADER -->
+
+                    <!-- 3 COLUMNS OF ABOUT US-->
+
+                    <div class="row">
+                        <%- include LineChart1.ejs %>
+
+                    </div>
+                    <div class="row">
+                        <%- include LineChart2.ejs %>
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- END ABOUT US SECTION -->
+
+            <section class="our-team" id="team">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="dark-text">911 CALLS HEAT MAP</h2>
+                        <div class="section-legend">This is the heat map.</div>
+                        <div class="row">
+                            <% include heatmap.ejs %>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonial" id="testimonials">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="white-text">911 calls</h2></div>
+                    <div id="container"></div>
+                </div>
+
+            </section>
+
+            <!-- / END CONTACT US SECTION-->
 
         </div>
-        <!-- / END CONTAINER -->
+        <!-- .site-content -->
 
-      </section>
-      <!-- / END FOCUS SECTION -->
+        <footer id="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
 
-      <section class="separator-one" id="ribbon_bottom">
-        <div class="color-overlay">
-         <!-- <h3 class="container text" data-scrollreveal="enter left after 0s over 1s">
-            Check out this cool parallax scrolling effect. Plus, you can change the background image.</h3>
-          <div data-scrollreveal="enter right after 0s over 1s"><a href="#" class="btn btn-primary custom-button green-btn">button</a>
-          </div>-->
-        </div>
-      </section>
-      <section class="about-us" id="aboutus">
+            <div class="container">
 
-        <div class="container">
-
-          <!-- SECTION HEADER -->
-
-          <div class="section-header">
-
-            <h2 class="white-text">Line Chart</h2>
-            <div class="white-text section-legend">Monthly report of 911 calls.
+                <!-- <div class="col-md-3 company-details">
+                  <div class="icon-top red-text"><img src="https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/uploads/sites/51/2017/04/map25-redish.png" alt="" /></div>
+                   <div class="zerif-footer-address">San Francisco - Adress - 18 California Street 1100.</div>
+                 </div>
+                 <div class="col-md-3 company-details">
+                   <div class="icon-top green-text"><img src="https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/uploads/sites/51/2017/04/envelope4-green.png" alt="" /></div>
+                   <div class="zerif-footer-email">friends@themeisle.com</div>
+                 </div>
+                 <div class="col-md-3 company-details">
+                   <div class="icon-top blue-text"><img src="https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/uploads/sites/51/2017/04/telephone65-blue.png" alt="" /></div>
+                   <div class="zerif-footer-phone">0 332 548 987</div>
+                 </div>
+                 <div class="col-md-3 copyright">
+                   <ul class="social">
+                     <li id="facebook"><a target="_blank" href="#"><span class="sr-only">Facebook link</span> <i
+                                 class="fa fa-facebook"></i></a></li>
+                     <li id="twitter"><a target="_blank" href="#"><span class="sr-only">Twitter link</span> <i
+                                 class="fa fa-twitter"></i></a></li>
+                     <li id="linkedin"><a target="_blank" href="#"><span class="sr-only">Linkedin link</span> <i
+                                 class="fa fa-linkedin"></i></a></li>
+                     <li id="behance"><a target="_blank" href="#"><span class="sr-only">Behance link</span> <i
+                                 class="fa fa-behance"></i></a></li>
+                     <li id="dribbble"><a target="_blank" href="#"><span class="sr-only">Dribble link</span> <i
+                                 class="fa fa-dribbble"></i></a></li>
+                     <li id="instagram"><a target="_blank" href="#"><span class="sr-only">Instagram link</span> <i
+                                 class="fa fa-instagram"></i></a></li>
+                   </ul>-->
+                <!-- .social -->
+                <p id="zerif-copyright">©Italiani</p>
+                <!--<div class="zerif-copyright-box"><a class="zerif-copyright" rel="nofollow">Zerif Lite </a>developed by <a class="zerif-copyright" href="https://themeisle.com" target="_blank" rel="nofollow">
+                    ThemeIsle</a></div>
+              </div>-->
             </div>
-          </div>
-          <!-- / END SECTION HEADER -->
+            <!-- / END CONTAINER -->
 
-          <!-- 3 COLUMNS OF ABOUT US-->
-
-          <div class="row">
-              <%- include LineChart1.ejs %>
-
-          </div>
-          <div class="row">
-              <%- include LineChart2.ejs %>
-          </div>
-
-        </div>
-
-      </section>
-      <!-- END ABOUT US SECTION -->
-
-      <section class="our-team" id="team">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="dark-text">911 CALLS HEAT MAP</h2>
-            <div class="section-legend">This is the heat map.</div>
-            <div class="row">
-                <% include heatmap.ejs %>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="testimonial" id="testimonials">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="white-text">911 calls</h2></div>
-          <div id="container"></div>
-        </div>
-
-      </section>
-
-      <!-- / END CONTACT US SECTION-->
+        </footer>
+        <!-- / END FOOOTER  -->
 
     </div>
-    <!-- .site-content -->
-
-    <footer id="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
-
-      <div class="container">
-
-       <!-- <div class="col-md-3 company-details">
-         <div class="icon-top red-text"><img src="https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/uploads/sites/51/2017/04/map25-redish.png" alt="" /></div>
-          <div class="zerif-footer-address">San Francisco - Adress - 18 California Street 1100.</div>
-        </div>
-        <div class="col-md-3 company-details">
-          <div class="icon-top green-text"><img src="https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/uploads/sites/51/2017/04/envelope4-green.png" alt="" /></div>
-          <div class="zerif-footer-email">friends@themeisle.com</div>
-        </div>
-        <div class="col-md-3 company-details">
-          <div class="icon-top blue-text"><img src="https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/uploads/sites/51/2017/04/telephone65-blue.png" alt="" /></div>
-          <div class="zerif-footer-phone">0 332 548 987</div>
-        </div>
-        <div class="col-md-3 copyright">
-          <ul class="social">
-            <li id="facebook"><a target="_blank" href="#"><span class="sr-only">Facebook link</span> <i
-                        class="fa fa-facebook"></i></a></li>
-            <li id="twitter"><a target="_blank" href="#"><span class="sr-only">Twitter link</span> <i
-                        class="fa fa-twitter"></i></a></li>
-            <li id="linkedin"><a target="_blank" href="#"><span class="sr-only">Linkedin link</span> <i
-                        class="fa fa-linkedin"></i></a></li>
-            <li id="behance"><a target="_blank" href="#"><span class="sr-only">Behance link</span> <i
-                        class="fa fa-behance"></i></a></li>
-            <li id="dribbble"><a target="_blank" href="#"><span class="sr-only">Dribble link</span> <i
-                        class="fa fa-dribbble"></i></a></li>
-            <li id="instagram"><a target="_blank" href="#"><span class="sr-only">Instagram link</span> <i
-                        class="fa fa-instagram"></i></a></li>
-          </ul>-->
-          <!-- .social -->
-          <p id="zerif-copyright">©Italiani</p>
-          <!--<div class="zerif-copyright-box"><a class="zerif-copyright" rel="nofollow">Zerif Lite </a>developed by <a class="zerif-copyright" href="https://themeisle.com" target="_blank" rel="nofollow">
-              ThemeIsle</a></div>
-        </div>-->
-      </div>
-      <!-- / END CONTAINER -->
-
-    </footer>
-    <!-- / END FOOOTER  -->
-
-  </div>
-  <!-- mobile-bg-fix-whole-site -->
+    <!-- mobile-bg-fix-whole-site -->
 </div>
 <!-- .mobile-bg-fix-wrap -->
 
 <!-- Google Tag Manager (noscript) -->
 <noscript>
-  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KM44RQ8" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KM44RQ8" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 <script type='text/javascript'>
-  /* <![CDATA[ */
-  var wc_add_to_cart_params = {
-      "ajax_url": "\/zerif-lite\/wp-admin\/admin-ajax.php",
-      "wc_ajax_url": "\/zerif-lite\/?wc-ajax=%%endpoint%%",
-      "i18n_view_cart": "View Cart",
-      "cart_url": "https:\/\/demo.themeisle.com\/zerif-lite\/cart\/",
-      "is_cart": "",
-      "cart_redirect_after_add": "no"
-  };
-  /* ]]> */
+    /* <![CDATA[ */
+    var wc_add_to_cart_params = {
+        "ajax_url": "\/zerif-lite\/wp-admin\/admin-ajax.php",
+        "wc_ajax_url": "\/zerif-lite\/?wc-ajax=%%endpoint%%",
+        "i18n_view_cart": "View Cart",
+        "cart_url": "https:\/\/demo.themeisle.com\/zerif-lite\/cart\/",
+        "is_cart": "",
+        "cart_redirect_after_add": "no"
+    };
+    /* ]]> */
 </script>
 <script type='text/javascript' src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=2.6.4'></script>
 <script type='text/javascript' src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
 <script type='text/javascript'>
-  /* <![CDATA[ */
-  var woocommerce_params = {
-      "ajax_url": "\/zerif-lite\/wp-admin\/admin-ajax.php",
-      "wc_ajax_url": "\/zerif-lite\/?wc-ajax=%%endpoint%%"
-  };
-  /* ]]> */
+    /* <![CDATA[ */
+    var woocommerce_params = {
+        "ajax_url": "\/zerif-lite\/wp-admin\/admin-ajax.php",
+        "wc_ajax_url": "\/zerif-lite\/?wc-ajax=%%endpoint%%"
+    };
+    /* ]]> */
 </script>
 <script type='text/javascript' src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=2.6.4'></script>
 <script type='text/javascript' src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js?ver=1.4.1'></script>
 <script type='text/javascript'>
-  /* <![CDATA[ */
-  var wc_cart_fragments_params = {
-      "ajax_url": "\/zerif-lite\/wp-admin\/admin-ajax.php",
-      "wc_ajax_url": "\/zerif-lite\/?wc-ajax=%%endpoint%%",
-      "fragment_name": "wc_fragments"
-  };
-  /* ]]> */
+    /* <![CDATA[ */
+    var wc_cart_fragments_params = {
+        "ajax_url": "\/zerif-lite\/wp-admin\/admin-ajax.php",
+        "wc_ajax_url": "\/zerif-lite\/?wc-ajax=%%endpoint%%",
+        "fragment_name": "wc_fragments"
+    };
+    /* ]]> */
 </script>
 <script type='text/javascript' src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=2.6.4'></script>
 <script type='text/javascript' src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/themes/zerif-lite/js/bootstrap.min.js?ver=20120206'></script>
@@ -590,46 +590,46 @@ Click the help icon above to learn more.
 <script type='text/javascript' src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-content/themes/zerif-lite/js/zerif.js?ver=20120206'></script>
 <script type='text/javascript' src='https://demot-vertigostudio.netdna-ssl.com/zerif-lite/wp-includes/js/hoverIntent.min.js?ver=1.8.1'></script>
 <script type='text/javascript'>
-  /* <![CDATA[ */
-  var megamenu = {
-      "effect": {
-          "fade": {
-              "in": {
-                  "animate": {
-                      "opacity": "show"
-                  },
-                  "css": {
-                      "display": "none"
-                  }
-              },
-              "out": {
-                  "animate": {
-                      "opacity": "hide"
-                  }
-              },
-              "speed": "fast"
-          },
-          "slide": {
-              "in": {
-                  "animate": {
-                      "height": "show"
-                  },
-                  "css": {
-                      "display": "none"
-                  }
-              },
-              "out": {
-                  "animate": {
-                      "height": "hide"
-                  }
-              },
-              "speed": "fast"
-          }
-      },
-      "timeout": "300",
-      "interval": "100"
-  };
-  /* ]]> */
+    /* <![CDATA[ */
+    var megamenu = {
+        "effect": {
+            "fade": {
+                "in": {
+                    "animate": {
+                        "opacity": "show"
+                    },
+                    "css": {
+                        "display": "none"
+                    }
+                },
+                "out": {
+                    "animate": {
+                        "opacity": "hide"
+                    }
+                },
+                "speed": "fast"
+            },
+            "slide": {
+                "in": {
+                    "animate": {
+                        "height": "show"
+                    },
+                    "css": {
+                        "display": "none"
+                    }
+                },
+                "out": {
+                    "animate": {
+                        "height": "hide"
+                    }
+                },
+                "speed": "fast"
+            }
+        },
+        "timeout": "300",
+        "interval": "100"
+    };
+    /* ]]> */
 </script>
 <script>
     $(function () {
